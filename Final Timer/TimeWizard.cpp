@@ -67,7 +67,7 @@ void TimeWizard::timeIt()
 	//Here we are using the variable Chrono to keep the time, and what the line below does is doing 
 	// is subtractring the end time so in the case, the time after X amount of minutes and the time that it is now
 	std::chrono::steady_clock::time_point tend = std::chrono::steady_clock::now()
-		+ std::chrono::minutes(1);
+		+ std::chrono::minutes(15);
 	//Starting a while loop while the timmer is running 
 	while (std::chrono::steady_clock::now() < tend)
 	{
@@ -83,7 +83,7 @@ void TimeWizard::timeIt()
 
 	cout << "\nTime Wizard: Don't worry " + *PUsername << endl;
 	cout << "Time Wizard: STAND UP RIGHT NOW AND MOVE!" << endl;
-	cout << "*\nDeath starts to fade away.\n" << endl;
+	cout << "\n*Death starts to fade away*" << endl;
 	cout << "Death: This isn't over, I will be back!" << endl;
 	cout << "\nTime Wizard: Good job " << Username << "!\n";
 
